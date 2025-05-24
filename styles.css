@@ -1,0 +1,46 @@
+#title {
+    font-size: 2.5em;
+    color: #4a90e2;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color:aliceblue;
+}
+#subtitle {
+    font-size: 1.5em;
+    color: #41526c;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color:aliceblue;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.link-image {
+    max-width: 265px;
+    border-radius: 16px;
+}
+.boba-pearl-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+    animation: spin-side 3s infinite linear;
+}
+
+@keyframes spin-side {
+    0% {
+        transform: translateX(-120px) rotate(0deg);
+    }
+    50% {
+        transform: translateX(120px) rotate(180deg);
+    }
+    100% {
+        transform: translateX(-120px) rotate(360deg);
+    }
+}
